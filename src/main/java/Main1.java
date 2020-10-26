@@ -34,6 +34,8 @@ public class Main1 {
             System.out.println(list.get(i));
         }
 
+
+
     }
 
     public static boolean isNumber(String number){
@@ -44,5 +46,8 @@ public class Main1 {
         }
         return true;
     }
+
+
+    
     }
 
