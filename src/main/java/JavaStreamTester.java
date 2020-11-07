@@ -18,12 +18,12 @@ public class JavaStreamTester {
     }
 
     private static String getMergedString(List<String> strings, String seperator){
-       //return strings.stream().filte
+       //return strings.stream().
         return null;
     }
 
     private static List<Integer> getSquares(List<Integer> numbers){
-        return Collections.singletonList(numbers.stream().mapToInt(x -> x * x).sum()); // Fragwürdig
+        return Collections.singletonList(numbers.stream().mapToInt(x -> x * x).sum()); //singletonList returns specified objectts
     }
 
     private static int getMax(List<Integer> numbers){

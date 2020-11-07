@@ -11,12 +11,12 @@ public class Main1 {
         List<Integer> list = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader("numbers.csv"))) {
             while (br.ready()) {
-               String[] line = br.readLine().split(":");
-               for(int i = 0; i < line.length; i++){
-                   if(isNumber(line[i])){
+                String[] line = br.readLine().split(":");
+                for(int i = 0; i < line.length; i++){
+                    if(isNumber(line[i])){
                         list.add(Integer.parseInt(line[i]));
-                   }
-               }
+                    }
+                }
             }
 
         } catch (IOException ioException) {
@@ -24,18 +24,12 @@ public class Main1 {
         }
 
 
+        Bsp_1 uno = new Bsp_1();
 
-        System.out.println("Divider:");
-        int divider = Integer.parseInt(s.nextLine());
+        //uno.run();
 
-
-
-        for(int i = 0; i<list.size(); i++){
-            System.out.println(list.get(i));
-        }
-
-
-
+        Bsp_2 dos = new Bsp_2();
+        dos.run();
     }
 
     public static boolean isNumber(String number){
@@ -46,8 +40,5 @@ public class Main1 {
         }
         return true;
     }
-
-
-    
-    }
+}
 
